@@ -1,9 +1,9 @@
-(defproject cloverage "1.0.7-SNAPSHOT"
+(defproject lvh/cloverage "1.0.7-SNAPSHOT"
   :description "Form-level test coverage for clojure."
-  :url "https://www.github.com/lshift/cloverage"
+  :url "https://www.github.com/lvh/cloverage"
   :scm {:name "git"
         :dir  ".."
-        :url  "https://www.github.com/lshift/cloverage"
+        :url  "https://www.github.com/lvh/cloverage"
         :tag  "HEAD"}
   :main ^:skip-aot cloverage.coverage
   :aot [clojure.tools.reader]
@@ -11,7 +11,6 @@
             :url "http://www.eclipse.org/legal/epl-v10.html"
             :distribution :repo
             :comments "same as Clojure"}
-  :deploy-repositories [["clojars" {:username :env/clojars_username :password :env/clojars_password :sign-releases false}]]
   :plugins [[lein-release "1.0.9"]]
   :lein-release {
     :scm :git ; Because we're not in the top-level directory, so it doesn't auto-detect
